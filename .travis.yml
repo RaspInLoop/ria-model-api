@@ -2,24 +2,23 @@ language: java
 install: true
 dist: bionic
 before_install:
-- openssl aes-256-cbc -K $encrypted_fc2e8151af07_key -iv $encrypted_fc2e8151af07_iv
+- openssl aes-256-cbc -K $encrypted_9e263dd12069_key -iv $encrypted_9e263dd12069_iv
   -in deployment/signingkey.asc.enc -out deployment/signingkey.asc -d
-
 cache:
   directories:
   - "$HOME/.m2"
 env:
   global:
-  - #jira username  
-  - secure: "VEXayBmNG5YF1bj3nAZWwM6NGDOLCxjldTbAcPSNGUBnI0e+yimpQRxn9oBbNSiuuc8uADPdeK9Xy6a80Pkz4dCaWqHdq2dU4HhF+jlXNSRU1pM7/B1qoDV6a7+yBBJ22QeeOGMPGTRhh0Juiequ1fxQhzMAR9Tw4mZtdwoqxLXpSS/xKgiJjM6BiF++MGakXOPOo0vxcdftNRPuxR31wBHvSq3hlf6w8QP0NikQBZflgU64YQfNH8GaGefsZ3bPQv6zgU3/X3X+TTdy0Ikwalo/KgGYFRGWumlyklyWSFZ/VdkQzoDZUUoCBM+F/dOhnD27JW3iKJjo5LcMVzXtEU2KyrCZETDGqaBEkXkMsT7p5ld2ErmANaofBQH9nO2ZSvde0kK3XSJiOYnYm1aDwWOzTcjDnHAETatBA5XtG1OhTktJ3k8K/z0DW0REInzLAxVQ8Mls7u9xKgwSKQRsYxlSeIyWgocu21ITukNJR43TAVCBBb5eGI+LHafWd/kLpyDlat6Tk0juLKw1k8h7M6FyBQ2ZSAgEUPIYRyDLcK/xWSCe+uIWOUBj/cg+leY8XKuvD+jGyVK6Fo7m30RBXndtPMu2N+DnOBvBBQQbRyMNjJfjgzRliTPlXTo/EVfT4mr+FHLQR20ltWec1gk28+G38CGrfwvwYp5MpCFJ4Y0="
-  - # jira password
-  - secure: "mYMP88KlS84PJlOn4nTHB8yFgKciYL52JaJK8MFpi4Tr59PegnVi1vuO/hOkExsp2YBx2pphwqLFrFj/oN4P+vIfd2iXwPbSs3ltlJnmUExNssDDwm6QDn7mCIi//2Nhb0o37bBXxW5ncyBaZfXlIpRCPoOsqI7R6Fm8vpOToJVbcG/RymSCGjEwyyMNEsxKf6HffhqJCWBW6R9josz57M/QQ8E2ofvovEAE151wZJUsNzp3fGB1ovEwX1Qsn8OFe+cWt5Z58HhFfEWrLZnck9+xbcP5j3hAQpNzGYABmW9TmwuAY7qBIans/ze4UitShlsQClSuQ9iw/cdZof0DQQxlzJGo3CEOSwkZ5/FOSH+43mSZiQc7JDQIeURAT3az1jv+ouuCs/cG7QeHFuLpw1evgIuESPDj+3OCU2FdwUBPrUxB+1mbFRUm8o9mg+bTozwlMCKDSow7EIpenMUSuKaiC64/bj4eNlXjbT8QHj68RijXVcdrycJ8i7UfLmWbSzNeznXuIiAj0WjXw3CbSKgJTaw9sNZWNSbwZbOf4GpsFzJ+JrDejPWRaHVdCbOCzUI56vZR8ZTVe5xD8hWdzY7/pRvknevtHe4EawPwI/l0llsj3xFlkldnbQVvbPgVyLmLtpX87z4mJfy5HcG/IPRmO0xUUUH3peyHxVyj+y4="
-  - # gpg passphrase
-
+  - 
+  - secure: VEXayBmNG5YF1bj3nAZWwM6NGDOLCxjldTbAcPSNGUBnI0e+yimpQRxn9oBbNSiuuc8uADPdeK9Xy6a80Pkz4dCaWqHdq2dU4HhF+jlXNSRU1pM7/B1qoDV6a7+yBBJ22QeeOGMPGTRhh0Juiequ1fxQhzMAR9Tw4mZtdwoqxLXpSS/xKgiJjM6BiF++MGakXOPOo0vxcdftNRPuxR31wBHvSq3hlf6w8QP0NikQBZflgU64YQfNH8GaGefsZ3bPQv6zgU3/X3X+TTdy0Ikwalo/KgGYFRGWumlyklyWSFZ/VdkQzoDZUUoCBM+F/dOhnD27JW3iKJjo5LcMVzXtEU2KyrCZETDGqaBEkXkMsT7p5ld2ErmANaofBQH9nO2ZSvde0kK3XSJiOYnYm1aDwWOzTcjDnHAETatBA5XtG1OhTktJ3k8K/z0DW0REInzLAxVQ8Mls7u9xKgwSKQRsYxlSeIyWgocu21ITukNJR43TAVCBBb5eGI+LHafWd/kLpyDlat6Tk0juLKw1k8h7M6FyBQ2ZSAgEUPIYRyDLcK/xWSCe+uIWOUBj/cg+leY8XKuvD+jGyVK6Fo7m30RBXndtPMu2N+DnOBvBBQQbRyMNjJfjgzRliTPlXTo/EVfT4mr+FHLQR20ltWec1gk28+G38CGrfwvwYp5MpCFJ4Y0=
+  - 
+  - secure: mYMP88KlS84PJlOn4nTHB8yFgKciYL52JaJK8MFpi4Tr59PegnVi1vuO/hOkExsp2YBx2pphwqLFrFj/oN4P+vIfd2iXwPbSs3ltlJnmUExNssDDwm6QDn7mCIi//2Nhb0o37bBXxW5ncyBaZfXlIpRCPoOsqI7R6Fm8vpOToJVbcG/RymSCGjEwyyMNEsxKf6HffhqJCWBW6R9josz57M/QQ8E2ofvovEAE151wZJUsNzp3fGB1ovEwX1Qsn8OFe+cWt5Z58HhFfEWrLZnck9+xbcP5j3hAQpNzGYABmW9TmwuAY7qBIans/ze4UitShlsQClSuQ9iw/cdZof0DQQxlzJGo3CEOSwkZ5/FOSH+43mSZiQc7JDQIeURAT3az1jv+ouuCs/cG7QeHFuLpw1evgIuESPDj+3OCU2FdwUBPrUxB+1mbFRUm8o9mg+bTozwlMCKDSow7EIpenMUSuKaiC64/bj4eNlXjbT8QHj68RijXVcdrycJ8i7UfLmWbSzNeznXuIiAj0WjXw3CbSKgJTaw9sNZWNSbwZbOf4GpsFzJ+JrDejPWRaHVdCbOCzUI56vZR8ZTVe5xD8hWdzY7/pRvknevtHe4EawPwI/l0llsj3xFlkldnbQVvbPgVyLmLtpX87z4mJfy5HcG/IPRmO0xUUUH3peyHxVyj+y4=
+  - 
 script:
-- gpg2 --keyring=$TRAVIS_BUILD_DIR/pubring.gpg --no-default-keyring --batch --import deployment/signingkey.asc
-- gpg2 --allow-secret-key-import --keyring=$TRAVIS_BUILD_DIR/secring.gpg --no-default-keyring --batch
-  --import deployment/signingkey.asc
+- gpg2 --keyring=$TRAVIS_BUILD_DIR/pubring.gpg --no-default-keyring --batch --import
+  deployment/signingkey.asc
+- gpg2 --allow-secret-key-import --keyring=$TRAVIS_BUILD_DIR/secring.gpg --no-default-keyring
+  --batch --import deployment/signingkey.asc
 - mvn clean deploy --settings mvnsettings.xml -Dgpg.executable=gpg2 -Dgpg.passphrase=$PASSPHRASE
-  -Dgpg.publicKeyring=$TRAVIS_BUILD_DIR/pubring.gpg -Dgpg.secretKeyring=$TRAVIS_BUILD_DIR/secring.gpg -Dgpg.keyname=5A2083E884C6FD20
-
+  -Dgpg.publicKeyring=$TRAVIS_BUILD_DIR/pubring.gpg -Dgpg.secretKeyring=$TRAVIS_BUILD_DIR/secring.gpg
+  -Dgpg.keyname=5A2083E884C6FD20
