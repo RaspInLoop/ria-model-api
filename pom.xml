@@ -3,7 +3,7 @@
 
   <groupId>org.raspinloop.server</groupId>
   <artifactId>model-api</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>${project.groupId}:${project.artifactId}</name>
@@ -127,6 +127,6 @@
 	    <connection>scm:git:git://github.com/RaspInLoop/OMJava.git</connection>
 	    <developerConnection>scm:git:git@github.com:RaspInLoop/OMJava.git</developerConnection>
 	    <url>https://github.com/RaspInLoop/ria-model-api</url>
-    <tag>model-api-1.0.0</tag>
+    <tag>HEAD</tag>
   </scm>
 </project>
