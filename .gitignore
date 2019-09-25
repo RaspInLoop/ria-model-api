@@ -1,3 +1,5 @@
 
 target/*
 deployment/signingkey.asc
+release.properties
+pom.xml.releaseBackup
